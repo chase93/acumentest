@@ -1,5 +1,5 @@
 
-Given(/^I am on the Acumenci Contact Us page$/) do
+Given(/^I am on the Acumen Contact Us page$/) do
  visit('http://www.acumenci.com/contact-us/')
      expect(page).to have_content("Acumen Commercial", wait:30)
 end
