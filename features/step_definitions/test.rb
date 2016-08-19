@@ -17,7 +17,7 @@ When(/^I submit just an email address and some message text$/) do
 end
 
 When(/^all other fields are blank$/) do
-   find(:css, 'send').click
+   page.find(:xpath, '//*[@id="wpcf7-f682-p495-o1"]/form/p[8]/input').click
 end
 
 Then(/^I should see errors about other required fields$/) do
