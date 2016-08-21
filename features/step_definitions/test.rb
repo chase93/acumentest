@@ -20,3 +20,7 @@ When(/^all other fields are blank$/) do
    page.find(:xpath, '//*[@id="wpcf7-f682-p495-o1"]/form/p[8]/input').click
 puts 'I recieve all the errors'
 end
+
+Then(/^I should see errors about other required fields$/) do
+  puts 'I win'
+end
