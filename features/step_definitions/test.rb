@@ -18,6 +18,7 @@ end
 
 When(/^all other fields are blank$/) do
    page.find(:xpath, '//*[@id="wpcf7-f682-p495-o1"]/form/p[8]/input').click
+   expect(page).to have_content("Validation errors occurred", wait:5)
 puts 'I recieve all the errors'
 end
 
