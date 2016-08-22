@@ -23,6 +23,6 @@ puts 'I recieve all the errors'
 end
 
 Then(/^I should see errors about other required fields$/) do
-    page.should have_content('Vaildation errors')
+    page.should have_content('Validation errors occurred.')
   puts 'I win'
 end
