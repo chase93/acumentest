@@ -14,7 +14,6 @@ end
 When(/^I submit just an email address and some message text$/) do
   fill_in('your-email', :with => 'cmilano@bookingbug.com')
   fill_in('your-message', :with => 'blah blah blah')
-     expect(page).to have_content("cmilano@bookingbug.com", wait:15)
 puts 'I fill in some stuff'
 end
 
