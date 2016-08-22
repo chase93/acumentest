@@ -24,6 +24,5 @@ end
 
 Then(/^I should see errors about other required fields$/) do
     page.should have_content('Vaildation errors')
-     expect(page).to have content("Please fill the required field")
   puts 'I win'
 end
