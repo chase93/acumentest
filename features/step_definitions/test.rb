@@ -23,6 +23,6 @@ puts 'I recieve all the errors'
 end
 
 Then(/^I should see errors about other required fields$/) do
- expect(page).to have_content("Vaildation errors occured", wait:10)
+   page.should have_content('This field is required.')
   puts 'I win'
 end
